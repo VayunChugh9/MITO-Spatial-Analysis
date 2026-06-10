@@ -1,6 +1,5 @@
 # Data
 
-This repository does not track raw data, processed Seurat/AnnData objects, or generated figures.
 
 Expected local inputs include:
 
@@ -16,4 +15,4 @@ Expected local inputs include:
   - `spatial_barcodes.tsv`
   - `spatial_metadata.csv`
 
-Place raw inputs under `data/raw/` and processed hand-off objects under `data/processed/`. Public accession or download instructions: `[TODO]`.
+Place raw inputs under `data/raw/` and processed hand-off objects under `data/processed/`. 
