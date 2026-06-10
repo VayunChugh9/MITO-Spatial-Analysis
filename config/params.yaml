@@ -1,0 +1,60 @@
+# Documented hardcoded parameters. Scripts do not read this file.
+
+spatial_preprocessing:
+  scripts:
+    scripts/01_spatial_preprocessing/01_cluster_spatial_matrix.R:
+      create_seurat_object:
+        min_cells: 0
+        min_features: 0
+      pca_neighbors_umap:
+        dims: "1:30"
+        cluster_resolution: 0.3
+      qc_metrics:
+        percent_mt_pattern: "^MT-|^mt-"
+    scripts/01_spatial_preprocessing/02_sample00632301_align_cluster.R:
+      snn_graph_k: 15
+      seurat_dims: "1:30"
+      cluster_resolution: 0.6
+      qc_metrics:
+        percent_mt_pattern: "^MT-|^mt-"
+    scripts/01_spatial_preprocessing/03_sample00632301_seurat_cluster.R:
+      variable_features: 3000
+      pca_dims: "1:30"
+      expression_cluster_resolution: 0.5
+      spatial_k_param: 12
+      spatial_cluster_resolution: 0.4
+      qc_metrics:
+        percent_mt_pattern: "^MT-|^mt-"
+
+annotation:
+  cytetyper:
+    n_top_genes: 50
+
+pseudotime:
+  monocle_spatial:
+    target_total_cells: 40000
+spatial_statistics:
+  cooccurrence:
+    default_k: 10
+    permutations: 1000
+    alpha: 0.05
+
+spatiotemporal_moscot:
+  preprocessing:
+    target_fraction: 0.3
+    target_sum: 10000
+    n_top_genes: 3000
+    pca_components: 50
+    n_neighbors: 15
+    n_pcs: 50
+    doublet_detection: scrublet
+  consolidated_v4:
+    target_cells: 10000
+    alpha: 0.2
+    epsilon: 0.0005
+    rank: 120
+    use_unbalanced: true
+    tau_a: 0.95
+    tau_b: 0.95
+figure_generation:
+  default_dpi: 300

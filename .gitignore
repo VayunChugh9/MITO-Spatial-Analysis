@@ -1,0 +1,47 @@
+# Data files
+*.h5ad
+*.rds
+*.RData
+*.h5
+*.loom
+*.mtx.gz
+*.mtx
+*.cloupe
+*.prism
+data/raw/
+data/processed/
+data/external/
+
+# Outputs
+*.pdf
+*.png
+*.tiff
+*.tif
+*.jpg
+*.jpeg
+plots/
+results/
+metrics/
+figures/*.pdf
+figures/*.png
+figures/*.tiff
+
+# Environment
+.Rhistory
+.RData
+.RDataTmp*
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.snakemake/
+.venv/
+venv/
+env/
+moscot_env/
+renv/library/
+
+# IDE and OS
+.Rproj.user/
+*.Rproj
+.DS_Store
+Thumbs.db
