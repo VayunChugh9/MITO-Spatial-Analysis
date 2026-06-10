@@ -32,8 +32,7 @@ Run scripts from the repository root unless a script documents a more specific w
 
 ## Data Availability
 
-Raw data and processed binary analysis objects are not included in this repository. Place local copies under `data/raw/` or `data/processed/`. Public accession, download links, or controlled-access instructions: `[TODO]`.
 
 ## Citation
 
-Preprint/publication link: `[TODO]`.
+ 
